@@ -938,6 +938,7 @@ void XpressInterface::SetConstraintBounds(int index, double lb, double ub) {
       // Constraint is already extracted, so we must update its bounds
       // and its type.
       DCHECK(mLp != NULL);
+      LOG(INFO) << mLp << std::endl;
       char sense;
       double range, rhs;
       MakeRhs(lb, ub, rhs, sense, range);
