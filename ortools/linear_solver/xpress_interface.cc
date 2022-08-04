@@ -1618,9 +1618,7 @@ MPSolver::ResultStatus XpressInterface::Solve(MPSolverParameters const& param) {
       break;
     }
   }
-
-  LOG(INFO) << mLp << std::endl;
-
+  
   // Extract the model to be solved.
   // If we don't support incremental extraction and the low-level modeling
   // is out of sync then we have to re-extract everything. Note that this
